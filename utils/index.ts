@@ -1,5 +1,6 @@
 import { CarProps, FilterProps } from "@/types";
 
+console.log(process.env.RAPID_KEY);
 export async function getCars() {
   const headers = {
     "X-RapidAPI-Key": process.env.RAPID_KEY || "",
